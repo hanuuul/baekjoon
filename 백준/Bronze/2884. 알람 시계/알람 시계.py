@@ -1,11 +1,11 @@
-H, M = map(int, input().split())
+h, m = input().split()
 
-M -= 45
+H = int(h)
+M = int(m)
 
-if M < 0:
-  if H > 0:
-    print(H-1, M+60)
-  else:
-    print(23, M+60)
-else:
-  print(H, M)
+if M>=45:
+    print(H, M-45)
+elif M<45 and H>0:
+    print(H-1, M+15)
+elif M<45 and H==0:
+    print(23, M+15)
