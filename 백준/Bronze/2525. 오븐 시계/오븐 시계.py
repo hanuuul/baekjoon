@@ -1,8 +1,8 @@
 h, m = input().split()
-endTime = int(input())
+cooktime = int(input())
 
 H = int(h)
-M = int(m) + endTime
+M = int(m) + cooktime
 
 H += M//60
 M %= 60
